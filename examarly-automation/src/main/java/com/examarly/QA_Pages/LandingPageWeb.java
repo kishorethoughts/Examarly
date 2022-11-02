@@ -19,8 +19,8 @@ public LandingPageWeb()
 
 	@FindBy(xpath = "//div[@class='homepage-landing-section-hero-button join-community btn-stp-cpy'][contains(text(),'Get Started')]")
 	WebElement Started;
-	@FindBy(xpath = "//button[@class='ng-binding'][1]")
-	 WebElement dontAllow;
+//	@FindBy(xpath = "//button[@class='ng-binding'][1]")
+//	 WebElement dontAllow;
 	@FindBy(xpath = "//div[@class='homepage-landing-section-hero-button start-todays-prep btn-stp-cpy'][contains(text(),'I Already Have an Account')]")
 	WebElement login;
 	@FindBy(xpath = "//div[@class='homepage-examsteps-card-item prep_01']//div[@class='homepage-examsteps-card-item-animation-layer']")
@@ -99,10 +99,10 @@ public LandingPageWeb()
 		Thread.sleep(4000);
 	}
 
-	public void DontAllow() throws InterruptedException {
-		dontAllow.click();
-		Thread.sleep(4000);
-	}
+//	public void DontAllow() throws InterruptedException {
+//		dontAllow.click();
+//		Thread.sleep(4000);
+//	}
 	public void GoBack() throws InterruptedException {
 		driver.navigate().back();
 		Thread.sleep(4000);

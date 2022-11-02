@@ -3,18 +3,18 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="com.examarlyLogin.HomePageLoginWeb">
-        <methods>
-          <include name="LoginPage"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.examarlyLogin.HomePageLoginWeb -->
       <class name="com.examarlyRewardsModule.RewardsWeb">
         <methods>
           <include name="setUp"/>
           <include name="LoginPage"/>
         </methods>
       </class> <!-- com.examarlyRewardsModule.RewardsWeb -->
+      <class name="com.examarlyLogin.HomePageLoginWeb">
+        <methods>
+          <include name="LoginPage"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.examarlyLogin.HomePageLoginWeb -->
       <class name="com.examarly.HomePageWeb">
         <methods>
           <include name="FAQ"/>

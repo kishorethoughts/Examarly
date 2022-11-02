@@ -3,6 +3,8 @@ package com.examarly;
 import org.testng.annotations.Test;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+
 import com.examarly.Login.LoginPageWeb;
 import com.examarly.QA_Pages.AboutPageWeb;
 import com.examarly.QA_Pages.BlogPageWeb;
@@ -24,7 +26,7 @@ public class HomePageWeb extends BaseclassWeb
     {
         super();
     }
-
+    
 	@BeforeClass
     public void setUp() 
     {
@@ -46,7 +48,7 @@ public class HomePageWeb extends BaseclassWeb
     public void Landingpage() throws InterruptedException
     {
         landingPage.GetStarted();
-        landingPage.DontAllow();
+        //landingPage.DontAllow();
         landingPage.GoBack();
         landingPage.LoginButton();
         landingPage.GoBack();
@@ -132,10 +134,10 @@ public class HomePageWeb extends BaseclassWeb
         blog.BlogBottomPage();
     }
     
-    @AfterClass
-    public void qiut() 
-    {
-    	driver.quit();
-   }
+//    @AfterClass
+//    public void qiut() 
+//    {
+//    	driver.quit();
+//   }
     
 }

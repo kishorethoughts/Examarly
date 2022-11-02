@@ -52,7 +52,7 @@ public class BaseclassLoginPageWeb{
 			driver = new SafariDriver();
 		}
        
-        driver.get("https://staging.examarly.com/");
+        driver.get("http://examarly-testing.s3-website.ap-south-1.amazonaws.com/");
         driver.manage().window().maximize();
         Thread.sleep(2000);
 	}

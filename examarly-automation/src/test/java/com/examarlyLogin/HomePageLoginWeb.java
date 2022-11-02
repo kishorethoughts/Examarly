@@ -4,7 +4,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeClass;
 import com.examarly.Login.LoginPageWeb;
 
-public class HomePageLoginWeb extends com.examarlyBaseClass.BaseclassLoginPageWeb{
+public class HomePageLoginWeb extends com.examarlyBaseClass.BaseclassWeb{
 
 LoginPageWeb loginPage;
 
@@ -13,7 +13,6 @@ public HomePageLoginWeb()
     super();
 }
 
-@BeforeMethod
 @BeforeClass
 public void setUp() 
 {

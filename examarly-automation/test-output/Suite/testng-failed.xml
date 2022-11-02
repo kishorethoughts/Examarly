@@ -3,16 +3,17 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.examarly.HomePage">
+      <class name="com.examarly.HomePageWeb">
         <methods>
-          <include name="setUp"/>
-          <include name="Landingpage"/>
-          <include name="Contact"/>
+          <include name="FAQ"/>
           <include name="qiut"/>
           <include name="BLOG"/>
-          <include name="FAQ"/>
+          <include name="Contact"/>
+          <include name="About"/>
+          <include name="setUp"/>
+          <include name="Landingpage"/>
         </methods>
-      </class> <!-- com.examarly.HomePage -->
+      </class> <!-- com.examarly.HomePageWeb -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

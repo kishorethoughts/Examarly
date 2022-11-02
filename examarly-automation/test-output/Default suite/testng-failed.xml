@@ -5,9 +5,13 @@
     <classes>
       <class name="com.examarly.HomePageWeb">
         <methods>
+          <include name="FAQ"/>
+          <include name="BLOG"/>
           <include name="qiut"/>
-          <include name="setUp"/>
+          <include name="Contact"/>
+          <include name="About"/>
           <include name="Landingpage"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- com.examarly.HomePageWeb -->
     </classes>

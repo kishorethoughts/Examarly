@@ -4,14 +4,14 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.examarly.Login.RewardsModuleWeb;
 
-public class RewardsWeb extends com.examarlyBaseClass.BaseclassLoginPageWeb {
+public class RewardsWeb extends com.examarlyBaseClass.BaseclassWeb {
 
 	RewardsModuleWeb rewards;
 
 	public RewardsWeb() {
 		super();
 	}
-
+	
 	@BeforeClass
 	public void setUp() {
 		try {
@@ -34,7 +34,7 @@ public class RewardsWeb extends com.examarlyBaseClass.BaseclassLoginPageWeb {
 		rewards.Otp2();
 		rewards.Otp3();
 		rewards.VerifyClick();
-		rewards.Achievements();
+		rewards.Stats();
 		rewards.TotalXp();
 		rewards.Syllabus();
 		rewards.HistoricalBackground();

@@ -5,8 +5,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.examarlyBaseClass.BaseclassLoginPageWeb;
+import com.examarlyBaseClass.BaseclassWeb;
 
- public class RewardsModuleWeb  extends BaseclassLoginPageWeb
+ public class RewardsModuleWeb  extends BaseclassWeb
  {
 	
  public RewardsModuleWeb() {
@@ -35,8 +36,8 @@ import com.examarlyBaseClass.BaseclassLoginPageWeb;
  WebElement email;
  @FindBy(xpath = "//button[normalize-space()='Sign up']")
  WebElement signupinsidelogin;
- @FindBy(xpath = "//button[@class='btn-primary']")
- WebElement achievements;
+ @FindBy(xpath = "(//span[contains(text(),'Stats')])[1]")
+ WebElement stats;
  @FindBy(xpath = "(//div[contains(@class,'xp-details')])[1]//h3")
  WebElement totalXp;
  @FindBy(xpath ="//span[normalize-space()='Syllabus']")
@@ -61,6 +62,10 @@ import com.examarlyBaseClass.BaseclassLoginPageWeb;
  WebElement submit;
  @FindBy(xpath = "(//button[normalize-space()='Yes'])[1]")
  WebElement yes;
+ @FindBy(xpath = "//div[@class='heading']")
+ WebElement streak;
+ @FindBy(xpath = "//button[@class='continue']")
+ WebElement clickoncontinue;
  @FindBy(xpath = "//p[@class='score']")
  WebElement score;
  @FindBy(xpath = "//div[@class='button-container desktop']//button[@class='btn-primary'][normalize-space()='Next']")
@@ -122,8 +127,8 @@ import com.examarlyBaseClass.BaseclassLoginPageWeb;
 	Thread.sleep(6000);
  }
 	
- public void Achievements() throws InterruptedException {
-	achievements.click();
+ public void Stats() throws InterruptedException {
+	stats.click();
 	Thread.sleep(3000);
  }
 
@@ -187,6 +192,17 @@ import com.examarlyBaseClass.BaseclassLoginPageWeb;
  public void Yes() throws InterruptedException {
 	yes.click();
 	Thread.sleep(10000);
+ }
+ 
+ public void Streak() throws InterruptedException {
+	 if (streak.getText().contains("streak!"))
+	 {
+		 clickoncontinue.click();
+	 }
+	 else 
+	 {
+		// score
+	 }
  }
  
  public void score() {
